@@ -3,6 +3,7 @@ import { AuthContext } from '../auth/AuthContext';
 import axios from 'axios';
 import './Login.css';
 import API_URL from '../config';
+import LogoutButton from './Logout';
 
 
 function Login() {
@@ -63,6 +64,7 @@ function Login() {
         </label>
         <input type="submit" value="Enviar" />
       </form>
+      <LogoutButton></LogoutButton>
     </div>
   );
 }
