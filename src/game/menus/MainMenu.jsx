@@ -82,7 +82,10 @@ export default function MainMenu(game, player) {
 
     function mensaje_turno() {
         if (!miTurno()) {
-            return (<h3>Aún no es tu turno, <br/> las acciones a realizar se <br/> desplegaran aquí cuando <br/> lo sea</h3>)
+            return (<h3>Aún no es tu turno, <br/> las acciones a realizar se
+             <br/> desplegaran aquí cuando <br/> lo sea. La página no actualiza por si sola <br/>
+             pensamos en poner un timeout cada 30-60 segundos <br/> 
+             pero por lo sacamos porque es <br/> más fácil revisar manual</h3>)
         }
     }
 

@@ -48,25 +48,25 @@ export default function Square(id, name, color, owner, price, ficha, nivelestruc
     }
 
     function propInfo(){
-        if (idp == "1E") { /* si es casilla libre  */
+        if (name == "INICIO") { /* si es casilla libre  */
             return (
                 <div className='casilla-libre'>
                     <img className="start" src={start} alt="start" />
                 </div>
             )
-        } else if(idp == "2E") {
+        } else if(name == "Zona de descanso") {
             return(
             <div className='casilla-libre'>
                 <img className="rest-area" src={restArea} alt="rest" />
             </div>
             )
-        } else if(idp == "3E") {
+        } else if(name == "Parada libre") {
             return(
             <div className='casilla-libre'>
                 <img className="free-parking" src={freeparking} alt="free parking" />
             </div>
             )
-        } else if(idp == "4E") {
+        } else if(name == "Museo de artes") {
             return(
             <div className='casilla-libre'>
                 <img className="museaum" src={museaum} alt="museo" />
