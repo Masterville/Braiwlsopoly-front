@@ -1,6 +1,8 @@
 import React, {useState} from 'react'
 import "./Navbar.css"
 import logo from "../assets/imgs/Braiwls.png"
+import LogoutButton from './Logout'
+
 function Navbar() {
   return (
     <>
@@ -12,6 +14,7 @@ function Navbar() {
       <a href="/juego" className="nav-link">Juego</a>
       <a href="/signup" className="nav-link">Regístrate</a>
       <a href="/" className="nav-link">Inicia Sesión</a>
+      {<LogoutButton></LogoutButton>}
     </nav>
     </>
   )
