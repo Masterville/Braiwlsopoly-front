@@ -209,11 +209,6 @@ export default function Juego() {
         )
     }}
 
-    function loggedIn() {
-        if (token == null) {
-            return(<h2>Debes estar logueado para ver las partidas</h2>)
-        }
-    }
 
   
 
@@ -223,7 +218,7 @@ export default function Juego() {
         <div className='container'>
             <div className='header-j'>
                 <h1>Menú de partidas</h1>
-                {loggedIn()}
+                <h6>debes estar logueado para verlas</h6>
                 <h2>-- {status} --</h2>
             </div>
 
