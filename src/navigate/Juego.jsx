@@ -34,7 +34,7 @@ export default function Juego() {
           }).catch((error) => {
               console.log("no estás logueado", error);
           })
-      }, [])
+      }, [status])
 
     useEffect(() => {
         axios.get(`${API_URL}/games/unfinished`, {'headers' : { 

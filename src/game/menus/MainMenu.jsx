@@ -124,7 +124,6 @@ export default function MainMenu(game, player) {
                     type="text" 
                     value={mortId}
                     onChange={(e) => setMortId(e.target.value)}
-                    maxLength="2"
                     required
                 />
                 </label>
