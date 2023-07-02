@@ -7,6 +7,7 @@ import dedal from '../assets/imgs/dedal.png'
 import auto from '../assets/imgs/auto.png'
 import sombrero from '../assets/imgs/sombrero.png'
 import barco from '../assets/imgs/barco.png'
+import API_URL from '../config';
 
 export default function Juego() {
     const [games, setGames] = useState([]);
@@ -22,7 +23,7 @@ export default function Juego() {
 
 
     useEffect(() => {
-        axios.get(`${import.meta.env.VITE_BACKEND_URL}/users/games`, {'headers' : { 
+        axios.get(`${API_URL}/users/games`, {'headers' : { 
             'authorization' : `Bearer ${token}`
     
         }}).then((response) => {
@@ -36,7 +37,7 @@ export default function Juego() {
       }, [])
 
     useEffect(() => {
-        axios.get(`${import.meta.env.VITE_BACKEND_URL}/games/unfinished`, {'headers' : { 
+        axios.get(`${API_URL}/games/unfinished`, {'headers' : { 
             'authorization' : `Bearer ${token}`
     
         }}).then((response) => {
@@ -52,7 +53,7 @@ export default function Juego() {
     function sendAction(idgame, name) {
         console.log("aappppp",name, idgame)
         if (name.length > 0) {
-        axios.post(`${import.meta.env.VITE_BACKEND_URL}/games/join`,
+        axios.post(`${API_URL}/games/join`,
         {
             idGame: idgame,
             nombrePlayer: name
@@ -78,7 +79,7 @@ export default function Juego() {
 
       function sendVote(idgame, vote) {
         console.log("vote", idgame, vote)
-        axios.post(`${import.meta.env.VITE_BACKEND_URL}/games/vote`,
+        axios.post(`${API_URL}/games/vote`,
         {
             idGame: idgame,
             voteStart: vote
@@ -96,7 +97,7 @@ export default function Juego() {
       }
 
       function startGame(idgame) {
-        axios.post(`${import.meta.env.VITE_BACKEND_URL}/games/start`,
+        axios.post(`${API_URL}/games/start`,
         {
             idGame: idgame
     
@@ -121,7 +122,7 @@ export default function Juego() {
 
       function createGame() {
         console.log("entre")
-        axios.post(`${import.meta.env.VITE_BACKEND_URL}/games/create`,
+        axios.post(`${API_URL}/games/create`,
         {},
         {'headers' : {
             'authorization' : `Bearer ${token}`

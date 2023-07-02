@@ -3,7 +3,7 @@ import dedal from '../../assets/imgs/dedal.png'
 import auto from '../../assets/imgs/auto.png'
 import sombrero from '../../assets/imgs/sombrero.png'
 import barco from '../../assets/imgs/barco.png'
-
+import API_URL from '../../config'
 
 
 import { useState, useEffect, useContext } from "react";
@@ -88,7 +88,7 @@ export default function MainMenu(game, player) {
 
     function sendAction(idg, action) {
         console.log(action, idg)
-        axios.post(`${import.meta.env.VITE_BACKEND_URL}/games/action`,
+        axios.post(`${API_URL}/games/action`,
         {
             idGame: idg,
             action: action

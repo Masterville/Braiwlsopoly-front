@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import './Signup.css'; 
+import API_URL from '../config';
 
 function Signup() {
   const [username, setUsername] = useState("");
@@ -10,10 +11,11 @@ function Signup() {
   const [msg, setMsg] = useState("");
 
 
+
   const handleSubmit = async (event) => {
     event.preventDefault();
 
-    axios.post(`${import.meta.env.VITE_BACKEND_URL}/signup`, {
+    axios.post(`${API_URL}/signup`, {
         username: username,
         mail: email,
         password: password

@@ -6,6 +6,7 @@ import { AuthContext } from "../auth/AuthContext";
 import MainMenu from './menus/MainMenu';
 import GamePanel from './GamePanel';
 import logoim from '../assets/imgs/logomonopoly.png'
+import API_URL from '../config';
 
 export default function Squares() {
   const [casillas, setCasillas] = useState([]);
@@ -45,7 +46,7 @@ export default function Squares() {
 
 
   useEffect(() => {
-    axios.get(`${import.meta.env.VITE_BACKEND_URL}/games/${idGame}`, {'headers' : { 
+    axios.get(`${API_URL}/games/${idGame}`, {'headers' : { 
         'authorization' : `Bearer ${token}`
 
     }}).then((response) => {
@@ -61,7 +62,7 @@ export default function Squares() {
 
 
   function getPlayer(){
-    axios.get(`${import.meta.env.VITE_BACKEND_URL}/users/player/${idGame}`, {'headers' : {
+    axios.get(`${API_URL}/users/player/${idGame}`, {'headers' : {
         'authorization' : `Bearer ${token}`
 
     }}).then((response) => {

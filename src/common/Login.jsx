@@ -2,6 +2,7 @@ import React, { useState, useContext } from 'react';
 import { AuthContext } from '../auth/AuthContext';
 import axios from 'axios';
 import './Login.css';
+import API_URL from '../config';
 
 
 function Login() {
@@ -14,7 +15,7 @@ function Login() {
   const handleSubmit = async (event) => {
     event.preventDefault();
 
-    axios.post(`${import.meta.env.VITE_BACKEND_URL}/login`, {
+    axios.post(`${API_URL}/login`, {
         mail: email,
         password: password
       }).then((response) => {
