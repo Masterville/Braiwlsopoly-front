@@ -1,0 +1,12 @@
+.gpcontainer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    padding: 20%;
+}
+
+.idjuego, .dado, .turno, .creado-por{
+    border-radius: 10px;
+    background-color: #1a1a1a;
+}

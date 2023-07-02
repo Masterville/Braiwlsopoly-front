@@ -1,0 +1,8 @@
+.order-list {
+    list-style: none;
+}
+
+.list-item {
+    font-size: 20px;
+    margin-block: 15px;
+}

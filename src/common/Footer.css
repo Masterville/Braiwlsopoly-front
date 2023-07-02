@@ -1,0 +1,25 @@
+.footer-bar{
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: fit-content;
+    position: absolute;
+    bottom: 0;
+    padding: 15px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-bar .box-footer {
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+}
+
+.footer-bar .box-footer .logo-footer {
+    width: 100px;
+}
+
+.footer-bar .box-footer .media-footer {
+    width: 50px;
+}

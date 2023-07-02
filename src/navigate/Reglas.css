@@ -1,0 +1,53 @@
+.title-page2 {
+    font-size: 40px;
+}
+.rules {
+    width: 100%;
+    list-style: none;
+    padding-inline: 0px
+}
+
+li {
+    text-align: left;
+
+}
+.description {
+    font-size: 20px;
+    margin-inline: auto;
+    max-width: 1000px;
+}
+
+.about-game {
+    background-color: rgb(18, 18, 18);
+    max-width: 1000px;
+    margin-inline: auto;
+    border-radius: 20px;
+    padding: 15px;
+    margin-top: 100px;
+    box-shadow: 3px 3px 10px rgba(255, 255, 255, 0.1);
+}
+.rules-game {
+    background-color: rgb(18, 18, 18);
+    max-width: 1000px;
+    margin-inline: auto;
+    border-radius: 20px;
+    margin-top: 100px;
+    box-shadow: 3px 3px 10px rgba(255, 255, 255, 0.1);
+    margin-bottom: 150px;
+    padding-inline: 50px;
+    padding-block: 1px;
+    min-width: 500px;
+}
+
+.order-list li{
+
+    margin-block: 7px;
+}
+.number {
+    color: rgba(255, 255, 255, 0.72)
+}
+
+.order-list li a{
+
+    color: rgba(82, 177, 220, 0.9);
+}

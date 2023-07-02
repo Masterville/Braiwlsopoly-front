@@ -1,0 +1,109 @@
+.square {
+    display: flex;
+    flex-direction: column;
+    background-color: antiquewhite;
+    color: black;
+    border-color: black;
+    border-radius: 7px;
+    padding: 3px;
+    justify-content: space-evenly;
+
+
+  }
+
+.contenido {
+    font-size: small;
+    font-family: sans-serif;
+}
+
+.Brown {
+    background-color: brown;
+    color: white;
+}
+
+.Pink {
+    background-color: rgb(223, 128, 144);
+    color: white;
+}
+
+.LightBlue {
+    background-color: blue;
+    color: white;
+}
+
+.Green {
+    background-color: green;
+    color: white;
+}
+
+.Yellow {
+    background-color: rgb(212, 186, 39);
+    color: white;
+}
+
+.Red {
+    background-color: rgb(201, 26, 26);
+    color: white;
+}
+
+.Orange {
+    background-color: rgb(255, 115, 0);
+    color: white;
+}
+
+.DarkBlue {
+    background-color: darkblue;
+    color: white;
+}
+
+.LightBlue {
+    background-color: rgb(26, 110, 167);
+    color: white;
+}
+
+.ficha {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.casa {
+    max-height: 15px;
+    max-width: 15px;
+}
+
+.start{
+    max-width: 100px;
+    max-height: 90px;
+}
+
+.free-parking{
+    max-width: 80px;
+    max-height: 120px;
+}
+
+.rest-area {
+    max-width: 70px;
+    max-width: 60px;
+}
+
+.museaum {
+    max-width: 80px;
+    max-height: 60px;
+}
+
+.seccion-fichas{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+}
+
+.seccion-estrucura{
+    display: flex;
+    flex-direction: row;
+}
+
+.casilla-libre{
+    align-self: center;
+    font-family: sans-serif;
+    font-size: small;
+}
